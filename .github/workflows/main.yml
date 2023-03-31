@@ -8,11 +8,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build -t huangminjian/react_app_docker_static --platform linux/amd64 .  -f Dockerfile.multi
+      run: docker build -t huangminjian/cenetery-qr-code-image --platform linux/amd64 . 
     - name: docker Login
-      run: docker login --username=huangminjian --password=huangminjian123
+      run: docker login --username=huangminjian --password=15976244339bb
     - name: Push the Docker image
-      run: docker push huangminjian/react_app_docker_static 
+      run: docker push huangminjian/cenetery-qr-code-image
     - name: executing remote ssh commands using password
       uses: appleboy/ssh-action@master
       with:
