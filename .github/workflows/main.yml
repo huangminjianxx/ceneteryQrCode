@@ -1,0 +1,28 @@
+name: Docker Image CI
+on: [push]
+jobs:
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build the Docker image
+      run: docker build -t huangminjian/react_app_docker_static --platform linux/amd64 .  -f Dockerfile.multi
+    - name: docker Login
+      run: docker login --username=huangminjian --password=huangminjian123
+    - name: Push the Docker image
+      run: docker push huangminjian/react_app_docker_static 
+    - name: executing remote ssh commands using password
+      uses: appleboy/ssh-action@master
+      with:
+        host: "124.222.63.24"
+        username: "lighthouse"
+        password: "huangminjian123A"
+        port: "22"
+        script: cd /home/lighthouse && docker stop docker_server_static && docker rm docker_server_static && docker rmi huangminjian/react_app_docker_static && docker login --username=huangminjian --password=huangminjian123 && docker pull huangminjian/react_app_docker_static && docker run -d --name docker_server_static  -p 8889:80 huangminjian/react_app_docker_static 
+        
+        
+        
+  
+
