@@ -18,15 +18,15 @@ export default function Home() {
         </div>
         <div className={styles.imgShow}>
             <img src='https://img0.baidu.com/it/u=1164705922,1631259085&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=889' />
-            <img src="https://picsum.photos/id/1067/540/720" />
-            <img src="https://picsum.photos/id/122/540/720"/>
-            <img src="https://picsum.photos/id/188/540/720"/>
-            <img src="https://picsum.photos/id/249/540/720"/>
-            <img src="https://picsum.photos/id/257/540/720"/>
-            <img src="https://picsum.photos/id/259/540/720"/>
-            <img src="https://picsum.photos/id/283/540/720"/>
-            <img src="https://picsum.photos/id/288/540/720"/>
-            <img src="https://picsum.photos/id/299/540/720"/>
+            <img src="https://img0.baidu.com/it/u=1164705922,1631259085&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=889" />
+            <img src="https://img0.baidu.com/it/u=1164705922,1631259085&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=889"/>
+            <img src="https://img0.baidu.com/it/u=1164705922,1631259085&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=889"/>
+            <img src="https://img0.baidu.com/it/u=1164705922,1631259085&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=889"/>
+            <img src="https://img0.baidu.com/it/u=1164705922,1631259085&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=889"/>
+            <img src="https://img0.baidu.com/it/u=1164705922,1631259085&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=889"/>
+            <img src="https://img0.baidu.com/it/u=1164705922,1631259085&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=889"/>
+            <img src="https://img0.baidu.com/it/u=1164705922,1631259085&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=889"/>
+            <img src="https://img0.baidu.com/it/u=1164705922,1631259085&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=889"/>
         </div>
     </div>
   )
