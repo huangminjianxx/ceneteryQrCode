@@ -20,7 +20,7 @@ jobs:
         username: "root"
         password: "15976244339Bb."
         port: "22"
-        script: cd /home/lighthouse && docker stop cenetery-qr-code-docker && docker rm cenetery-qr-code-docker && docker rmi huangminjian/cenetery-qr-code-image && docker login --username=huangminjian --password=15976244339bb && docker pull huangminjian/cenetery-qr-code-image && docker run -d --name cenetery-qr-code-docker -p 8889:80 huangminjian/cenetery-qr-code-image /bin/sh -c "cd ./app;npm run dev" 
+        script: ls -a && docker stop cenetery-qr-code-docker && docker rm cenetery-qr-code-docker && docker rmi huangminjian/cenetery-qr-code-image && docker login --username=huangminjian --password=15976244339bb && docker pull huangminjian/cenetery-qr-code-image && docker run -d --name cenetery-qr-code-docker -p 8889:80 huangminjian/cenetery-qr-code-image /bin/sh -c "cd ./app;npm run dev" 
         
         
         
