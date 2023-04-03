@@ -16,9 +16,9 @@ jobs:
     - name: executing remote ssh commands using password
       uses: appleboy/ssh-action@master
       with:
-        host: "139.224.64.234"
+        host: "101.33.246.28"
         username: "root"
-        password: "15976244339Bb."
+        password: "huangminjian123Aa"
         port: "22"
         script: ls -a && docker stop cenetery-qr-code-docker && docker rm cenetery-qr-code-docker && docker rmi huangminjian/cenetery-qr-code-image && docker login --username=huangminjian --password=15976244339bb && docker pull huangminjian/cenetery-qr-code-image && docker run -d --name cenetery-qr-code-docker -p 8889:3000 huangminjian/cenetery-qr-code-image /bin/sh -c "cd ./app;npm run dev" 
         
