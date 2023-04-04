@@ -94,7 +94,13 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
-
+html,body{
+  height: 100%;
+}
+#__next{
+  min-height: 100%;
+  position: relative;
+}
 a {
   color: inherit;
   text-decoration: none;
