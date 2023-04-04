@@ -1,0 +1,54 @@
+.animalTemplate{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .header{
+        width: 100%;
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .information{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 60px;
+        box-sizing: border-box;
+        background: url('https://5f6d8a1c22f35.t74.qifeiye.com/qfy-content/uploads/2020/09/e2c1104214e98be3df036aefed504bb9-90.webp') no-repeat;
+        background-size: 100% auto;
+        .line{
+            height: 5px;
+            width: 60px;
+            background-color: red;
+            margin-top: 30px;
+        }
+        .name{
+            font-size: 26px;
+            font-weight: bold;
+            color: #37393e;
+            margin-top: 20px;
+        }
+        .time{
+            font-size: 20px;
+            color: #37393e;
+            margin-top: 15px;
+        }
+        .introduction{
+            font-size: 20px;
+            color: #37393e;
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+    }
+    .imgShow{
+        display: flex;
+        flex-direction: column;
+        img{
+            width: 100%;
+            height: auto;
+            margin-top: 5px;
+        }
+    }
+}
